@@ -1,0 +1,12 @@
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\bin\Debug\Hastane-Yonetim-Sistemi.exe.config
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\bin\Debug\Hastane-Yonetim-Sistemi.exe
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\bin\Debug\Hastane-Yonetim-Sistemi.pdb
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane-Yonetim-Sistemi.csproj.AssemblyReference.cache
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.Properties.Resources.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane-Yonetim-Sistemi.csproj.GenerateResource.cache
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane-Yonetim-Sistemi.csproj.CoreCompileInputs.cache
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane-Yonetim-Sistemi.exe
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane-Yonetim-Sistemi.pdb
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmHastaGiris.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmGirisler.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmHastaKayit.resources
