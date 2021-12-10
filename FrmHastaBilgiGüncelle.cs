@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Hastane_Yonetim_Sistemi
 {
@@ -15,6 +16,39 @@ namespace Hastane_Yonetim_Sistemi
         public FrmHastaBilgiGüncelle()
         {
             InitializeComponent();
+        }
+        public string TCno;
+        SqlBaglantisi bgl = new SqlBaglantisi();
+        private void FrmHastaBilgiGüncelle_Load(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Select * From Tbl_Hastalar where HastaTC="+TCno, bgl.baglanti());;
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+             {
+               txtAd.Text = dr[1].ToString();
+               txtSoyad.Text = dr[2].ToString();
+               mskTC.Text = dr[3].ToString();
+               mskTelefon.Text = dr[4].ToString();
+               txtSifre.Text = dr[5].ToString();
+               cmbCinsiyet.Text = dr[6].ToString();
+             }
+                bgl.baglanti().Close();
+            
+            
+        }
+
+        private void btnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut2 = new SqlCommand("update Tbl_Hastalar set HastaAd=@p1,HastaSoyad=@p2,HastaTelefon=@p3,HastaSifre=@p4,HastaCinsiyet=@p5 where HastaTC="+TCno, bgl.baglanti());
+            komut2.Parameters.AddWithValue("@p1", txtAd.Text);
+            komut2.Parameters.AddWithValue("@p2", txtSoyad.Text);
+            komut2.Parameters.AddWithValue("@p3", mskTelefon.Text);
+            komut2.Parameters.AddWithValue("@p4", txtSifre.Text);
+            komut2.Parameters.AddWithValue("@p5", cmbCinsiyet.Text);
+            komut2.ExecuteNonQuery();
+            MessageBox.Show("Bilgileriniz Başarıyla Güncellendi","Bilgi Güncellemesi",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            bgl.baglanti().Close();
+            this.Hide();
         }
     }
 }

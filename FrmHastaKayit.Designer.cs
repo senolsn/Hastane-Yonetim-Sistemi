@@ -41,7 +41,7 @@ namespace Hastane_Yonetim_Sistemi
             this.txtSoyad = new System.Windows.Forms.TextBox();
             this.mskTC = new System.Windows.Forms.MaskedTextBox();
             this.mskTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.mskSifre = new System.Windows.Forms.TextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
             this.cmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnKaydol = new System.Windows.Forms.Button();
@@ -138,7 +138,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.mskTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mskTC.Location = new System.Drawing.Point(186, 192);
-            this.mskTC.Mask = "0000000000";
+            this.mskTC.Mask = "00000000000";
             this.mskTC.Name = "mskTC";
             this.mskTC.Size = new System.Drawing.Size(130, 23);
             this.mskTC.TabIndex = 9;
@@ -153,13 +153,14 @@ namespace Hastane_Yonetim_Sistemi
             this.mskTelefon.Size = new System.Drawing.Size(130, 23);
             this.mskTelefon.TabIndex = 10;
             // 
-            // mskSifre
+            // txtSifre
             // 
-            this.mskSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskSifre.Location = new System.Drawing.Point(186, 270);
-            this.mskSifre.Name = "mskSifre";
-            this.mskSifre.Size = new System.Drawing.Size(130, 23);
-            this.mskSifre.TabIndex = 11;
+            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSifre.Location = new System.Drawing.Point(186, 270);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.PasswordChar = '•';
+            this.txtSifre.Size = new System.Drawing.Size(130, 23);
+            this.txtSifre.TabIndex = 11;
             // 
             // cmbCinsiyet
             // 
@@ -200,6 +201,7 @@ namespace Hastane_Yonetim_Sistemi
             this.btnKaydol.TabIndex = 14;
             this.btnKaydol.Text = "Kaydol";
             this.btnKaydol.UseVisualStyleBackColor = true;
+            this.btnKaydol.Click += new System.EventHandler(this.btnKaydol_Click);
             // 
             // FrmHastaKayit
             // 
@@ -210,7 +212,7 @@ namespace Hastane_Yonetim_Sistemi
             this.Controls.Add(this.btnKaydol);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbCinsiyet);
-            this.Controls.Add(this.mskSifre);
+            this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.mskTelefon);
             this.Controls.Add(this.mskTC);
             this.Controls.Add(this.txtSoyad);
@@ -244,7 +246,7 @@ namespace Hastane_Yonetim_Sistemi
         private System.Windows.Forms.TextBox txtSoyad;
         private System.Windows.Forms.MaskedTextBox mskTC;
         private System.Windows.Forms.MaskedTextBox mskTelefon;
-        private System.Windows.Forms.TextBox mskSifre;
+        private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.ComboBox cmbCinsiyet;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnKaydol;

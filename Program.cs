@@ -16,7 +16,7 @@ namespace Hastane_Yonetim_Sistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmHastaKayit());
+            Application.Run(new FrmGirisler());
         }
     }
 }

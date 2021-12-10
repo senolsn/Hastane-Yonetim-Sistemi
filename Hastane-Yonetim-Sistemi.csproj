@@ -132,6 +132,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantisi.cs" />
     <EmbeddedResource Include="FrmBransPaneli.resx">
       <DependentUpon>FrmBransPaneli.cs</DependentUpon>
     </EmbeddedResource>

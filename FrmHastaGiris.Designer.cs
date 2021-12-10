@@ -112,6 +112,7 @@ namespace Hastane_Yonetim_Sistemi
             this.lnkUyeOl.TabIndex = 6;
             this.lnkUyeOl.TabStop = true;
             this.lnkUyeOl.Text = "Üye Değil Misiniz ?";
+            this.lnkUyeOl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkUyeOl_LinkClicked);
             // 
             // btnGirisYap
             // 
@@ -130,6 +131,7 @@ namespace Hastane_Yonetim_Sistemi
             this.btnGirisYap.TabIndex = 7;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // FrmHastaGiris
             // 

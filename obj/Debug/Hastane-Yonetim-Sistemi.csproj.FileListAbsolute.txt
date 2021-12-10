@@ -10,3 +10,14 @@ C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\
 C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmHastaGiris.resources
 C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmGirisler.resources
 C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmHastaKayit.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmBransPaneli.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmDoktorBilgiDuzenle.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmDoktorDetay.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmDoktorGiris.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmDoktorPaneli.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmDuyurular.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmHastaBilgiGüncelle.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmHastaDetay.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmRandevuListesi.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmSekreterDetay.resources
+C:\Users\Wehon\source\repos\Hastane-Yonetim-Sistemi\Hastane-Yonetim-Sistemi\obj\Debug\Hastane_Yonetim_Sistemi.FrmSekreterGiris.resources

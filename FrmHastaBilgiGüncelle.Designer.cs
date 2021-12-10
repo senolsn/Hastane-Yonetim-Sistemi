@@ -33,7 +33,7 @@ namespace Hastane_Yonetim_Sistemi
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbCinsiyet = new System.Windows.Forms.ComboBox();
-            this.mskSifre = new System.Windows.Forms.TextBox();
+            this.txtSifre = new System.Windows.Forms.TextBox();
             this.mskTelefon = new System.Windows.Forms.MaskedTextBox();
             this.mskTC = new System.Windows.Forms.MaskedTextBox();
             this.txtSoyad = new System.Windows.Forms.TextBox();
@@ -66,6 +66,7 @@ namespace Hastane_Yonetim_Sistemi
             this.btnGuncelle.TabIndex = 29;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.UseVisualStyleBackColor = true;
+            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
             // 
             // pictureBox1
             // 
@@ -89,13 +90,13 @@ namespace Hastane_Yonetim_Sistemi
             this.cmbCinsiyet.Size = new System.Drawing.Size(130, 23);
             this.cmbCinsiyet.TabIndex = 27;
             // 
-            // mskSifre
+            // txtSifre
             // 
-            this.mskSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskSifre.Location = new System.Drawing.Point(186, 274);
-            this.mskSifre.Name = "mskSifre";
-            this.mskSifre.Size = new System.Drawing.Size(130, 23);
-            this.mskSifre.TabIndex = 26;
+            this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSifre.Location = new System.Drawing.Point(186, 274);
+            this.txtSifre.Name = "txtSifre";
+            this.txtSifre.Size = new System.Drawing.Size(130, 23);
+            this.txtSifre.TabIndex = 26;
             // 
             // mskTelefon
             // 
@@ -222,7 +223,7 @@ namespace Hastane_Yonetim_Sistemi
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbCinsiyet);
-            this.Controls.Add(this.mskSifre);
+            this.Controls.Add(this.txtSifre);
             this.Controls.Add(this.mskTelefon);
             this.Controls.Add(this.mskTC);
             this.Controls.Add(this.txtSoyad);
@@ -237,6 +238,7 @@ namespace Hastane_Yonetim_Sistemi
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmHastaBilgiGüncelle";
             this.Text = "FrmHastaBilgiGüncelle";
+            this.Load += new System.EventHandler(this.FrmHastaBilgiGüncelle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -248,7 +250,7 @@ namespace Hastane_Yonetim_Sistemi
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cmbCinsiyet;
-        private System.Windows.Forms.TextBox mskSifre;
+        private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.MaskedTextBox mskTelefon;
         private System.Windows.Forms.MaskedTextBox mskTC;
         private System.Windows.Forms.TextBox txtSoyad;

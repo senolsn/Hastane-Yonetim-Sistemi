@@ -57,6 +57,7 @@ namespace Hastane_Yonetim_Sistemi
             this.btnGirisYap.TabIndex = 15;
             this.btnGirisYap.Text = "Giriş Yap";
             this.btnGirisYap.UseVisualStyleBackColor = true;
+            this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
             // txtSifre
             // 
