@@ -64,6 +64,8 @@ namespace Hastane_Yonetim_Sistemi
             this.btnRandevuListesi = new System.Windows.Forms.Button();
             this.btnBransPaneli = new System.Windows.Forms.Button();
             this.btnDoktorPaneli = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -83,7 +85,7 @@ namespace Hastane_Yonetim_Sistemi
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(12, 25);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(373, 131);
             this.groupBox1.TabIndex = 1;
@@ -141,7 +143,7 @@ namespace Hastane_Yonetim_Sistemi
             this.groupBox2.Controls.Add(this.btnDuyuruOlustur);
             this.groupBox2.Controls.Add(this.rtbDuyuru);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 149);
+            this.groupBox2.Location = new System.Drawing.Point(12, 162);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(373, 263);
             this.groupBox2.TabIndex = 3;
@@ -185,7 +187,7 @@ namespace Hastane_Yonetim_Sistemi
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(391, 12);
+            this.groupBox3.Location = new System.Drawing.Point(391, 25);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(329, 400);
             this.groupBox3.TabIndex = 4;
@@ -337,7 +339,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.groupBox4.Controls.Add(this.dataGridView1);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(735, 12);
+            this.groupBox4.Location = new System.Drawing.Point(735, 25);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(412, 255);
             this.groupBox4.TabIndex = 5;
@@ -358,7 +360,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.groupBox5.Controls.Add(this.dataGridView2);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(735, 270);
+            this.groupBox5.Location = new System.Drawing.Point(735, 287);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(412, 257);
             this.groupBox5.TabIndex = 6;
@@ -382,7 +384,7 @@ namespace Hastane_Yonetim_Sistemi
             this.groupBox6.Controls.Add(this.btnBransPaneli);
             this.groupBox6.Controls.Add(this.btnDoktorPaneli);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(12, 418);
+            this.groupBox6.Location = new System.Drawing.Point(12, 431);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(708, 109);
             this.groupBox6.TabIndex = 7;
@@ -429,12 +431,35 @@ namespace Hastane_Yonetim_Sistemi
             this.btnDoktorPaneli.UseVisualStyleBackColor = true;
             this.btnDoktorPaneli.Click += new System.EventHandler(this.btnDoktorPaneli_Click);
             // 
+            // button1
+            // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(1126, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(32, 31);
+            this.button1.TabIndex = 8;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(-1, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1121, 15);
+            this.panel1.TabIndex = 9;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(172)))), ((int)(((byte)(142)))));
-            this.ClientSize = new System.Drawing.Size(1159, 539);
+            this.ClientSize = new System.Drawing.Size(1159, 560);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
@@ -442,6 +467,7 @@ namespace Hastane_Yonetim_Sistemi
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmSekreterDetay";
             this.Text = "FrmSekreterDetay";
             this.Load += new System.EventHandler(this.FrmSekreterDetay_Load);
@@ -496,5 +522,7 @@ namespace Hastane_Yonetim_Sistemi
         private System.Windows.Forms.Button btnBransPaneli;
         private System.Windows.Forms.Button btnDoktorPaneli;
         private System.Windows.Forms.Button btnDuyuruListesi;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

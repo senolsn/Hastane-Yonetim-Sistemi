@@ -27,5 +27,10 @@ namespace Hastane_Yonetim_Sistemi
             dataGridView1.DataSource = dt;
             bgl.baglanti().Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

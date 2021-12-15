@@ -45,6 +45,7 @@ namespace Hastane_Yonetim_Sistemi
             this.cmbCinsiyet = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnKaydol = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,7 +113,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Constantia", 24.75F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(88, 30);
+            this.label7.Location = new System.Drawing.Point(88, 39);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(304, 40);
             this.label7.TabIndex = 6;
@@ -177,7 +178,7 @@ namespace Hastane_Yonetim_Sistemi
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -203,12 +204,23 @@ namespace Hastane_Yonetim_Sistemi
             this.btnKaydol.UseVisualStyleBackColor = true;
             this.btnKaydol.Click += new System.EventHandler(this.btnKaydol_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(-2, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(403, 14);
+            this.panel1.TabIndex = 15;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
             // FrmHastaKayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(172)))), ((int)(((byte)(142)))));
             this.ClientSize = new System.Drawing.Size(402, 400);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnKaydol);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.cmbCinsiyet);
@@ -225,6 +237,7 @@ namespace Hastane_Yonetim_Sistemi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHastaKayit";
             this.Text = "FrmHastaKayit";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -250,5 +263,6 @@ namespace Hastane_Yonetim_Sistemi
         private System.Windows.Forms.ComboBox cmbCinsiyet;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnKaydol;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -46,6 +46,7 @@ namespace Hastane_Yonetim_Sistemi
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,7 +72,7 @@ namespace Hastane_Yonetim_Sistemi
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 19);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(70, 70);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +138,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Constantia", 24.75F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(142, 9);
+            this.label7.Location = new System.Drawing.Point(142, 16);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(188, 40);
             this.label7.TabIndex = 21;
@@ -207,11 +208,21 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Constantia", 24.75F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(89, 48);
+            this.label8.Location = new System.Drawing.Point(89, 55);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(312, 40);
             this.label8.TabIndex = 30;
             this.label8.Text = "Güncelleme Paneli";
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(-1, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(402, 11);
+            this.panel1.TabIndex = 31;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // FrmHastaBilgiGüncelle
             // 
@@ -219,6 +230,7 @@ namespace Hastane_Yonetim_Sistemi
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(172)))), ((int)(((byte)(142)))));
             this.ClientSize = new System.Drawing.Size(402, 400);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.pictureBox1);
@@ -236,6 +248,7 @@ namespace Hastane_Yonetim_Sistemi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHastaBilgiGüncelle";
             this.Text = "FrmHastaBilgiGüncelle";
             this.Load += new System.EventHandler(this.FrmHastaBilgiGüncelle_Load);
@@ -263,5 +276,6 @@ namespace Hastane_Yonetim_Sistemi
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -12,9 +12,7 @@ namespace Hastane_Yonetim_Sistemi
 {
     public partial class FrmGirisler : Form
     {
-        int mov;
-        int movX;
-        int movY;
+        MovementBar move = new MovementBar();
         public FrmGirisler()
         {
             InitializeComponent();
@@ -43,22 +41,25 @@ namespace Hastane_Yonetim_Sistemi
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
-            mov = 1;
-            movX = e.X;
-            movY = e.Y;
+
+            move.mov = 1;
+            move.movX = e.X;
+            move.movY = e.Y;
         }
 
         private void panel1_MouseMove(object sender, MouseEventArgs e)
         {
-            if (mov == 1)
+            if (move.mov == 1)
             {
-                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+                this.SetDesktopLocation(MousePosition.X - move.movX, MousePosition.Y - move.movY);
             }
         }
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
-            mov = 0;
+            move.mov = 0;
         }
+
+        
     }
 }

@@ -38,6 +38,7 @@ namespace Hastane_Yonetim_Sistemi
             this.txtSifre = new System.Windows.Forms.TextBox();
             this.lnkUyeOl = new System.Windows.Forms.LinkLabel();
             this.btnGirisYap = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 69);
+            this.label1.Location = new System.Drawing.Point(14, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 25);
             this.label1.TabIndex = 0;
@@ -55,7 +56,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(89, 109);
+            this.label2.Location = new System.Drawing.Point(89, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(63, 25);
             this.label2.TabIndex = 1;
@@ -65,7 +66,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Constantia", 24.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 12);
+            this.label3.Location = new System.Drawing.Point(12, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(298, 40);
             this.label3.TabIndex = 2;
@@ -75,7 +76,7 @@ namespace Hastane_Yonetim_Sistemi
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(331, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(331, 18);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(143, 122);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -85,7 +86,7 @@ namespace Hastane_Yonetim_Sistemi
             // mskTC
             // 
             this.mskTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mskTC.Location = new System.Drawing.Point(149, 69);
+            this.mskTC.Location = new System.Drawing.Point(149, 75);
             this.mskTC.Mask = "00000000000";
             this.mskTC.Name = "mskTC";
             this.mskTC.Size = new System.Drawing.Size(146, 23);
@@ -95,7 +96,7 @@ namespace Hastane_Yonetim_Sistemi
             // txtSifre
             // 
             this.txtSifre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSifre.Location = new System.Drawing.Point(149, 113);
+            this.txtSifre.Location = new System.Drawing.Point(149, 119);
             this.txtSifre.Name = "txtSifre";
             this.txtSifre.PasswordChar = '•';
             this.txtSifre.Size = new System.Drawing.Size(146, 23);
@@ -106,7 +107,7 @@ namespace Hastane_Yonetim_Sistemi
             this.lnkUyeOl.AutoSize = true;
             this.lnkUyeOl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lnkUyeOl.LinkColor = System.Drawing.Color.Black;
-            this.lnkUyeOl.Location = new System.Drawing.Point(333, 137);
+            this.lnkUyeOl.Location = new System.Drawing.Point(333, 143);
             this.lnkUyeOl.Name = "lnkUyeOl";
             this.lnkUyeOl.Size = new System.Drawing.Size(141, 20);
             this.lnkUyeOl.TabIndex = 6;
@@ -125,7 +126,7 @@ namespace Hastane_Yonetim_Sistemi
             this.btnGirisYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGirisYap.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnGirisYap.Location = new System.Drawing.Point(170, 142);
+            this.btnGirisYap.Location = new System.Drawing.Point(170, 148);
             this.btnGirisYap.Name = "btnGirisYap";
             this.btnGirisYap.Size = new System.Drawing.Size(104, 40);
             this.btnGirisYap.TabIndex = 7;
@@ -133,12 +134,23 @@ namespace Hastane_Yonetim_Sistemi
             this.btnGirisYap.UseVisualStyleBackColor = true;
             this.btnGirisYap.Click += new System.EventHandler(this.btnGirisYap_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(2, -3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(485, 18);
+            this.panel1.TabIndex = 8;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
+            // 
             // FrmHastaGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(172)))), ((int)(((byte)(142)))));
             this.ClientSize = new System.Drawing.Size(486, 200);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnGirisYap);
             this.Controls.Add(this.lnkUyeOl);
             this.Controls.Add(this.txtSifre);
@@ -148,6 +160,7 @@ namespace Hastane_Yonetim_Sistemi
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmHastaGiris";
             this.Text = "FrmHastaGiris";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -166,5 +179,6 @@ namespace Hastane_Yonetim_Sistemi
         private System.Windows.Forms.TextBox txtSifre;
         private System.Windows.Forms.LinkLabel lnkUyeOl;
         private System.Windows.Forms.Button btnGirisYap;
+        private System.Windows.Forms.Panel panel1;
     }
 }

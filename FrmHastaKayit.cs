@@ -18,6 +18,7 @@ namespace Hastane_Yonetim_Sistemi
             InitializeComponent();
         }
         SqlBaglantisi bgl = new SqlBaglantisi();
+        MovementBar move = new MovementBar();
         private void btnKaydol_Click(object sender, EventArgs e)
         {
             SqlCommand komut = new SqlCommand("Insert  Into Tbl_Hastalar (HastaAd,HastaSoyad,HastaTC,HastaTelefon,HastaSifre,HastaCinsiyet) values (@p1,@p2,@p3,@p4,@p5,@p6)", bgl.baglanti());
@@ -32,6 +33,26 @@ namespace Hastane_Yonetim_Sistemi
             MessageBox.Show("Kayıt İşlemi Tamamlandı!"+" "+"Şifreniz :"+txtSifre.Text, "Kaydınız Oluşturuldu.", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Hide();
 
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move.mov = 1;
+            move.movX = e.X;
+            move.movY = e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move.mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - move.movX, MousePosition.Y - move.movY);
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            move.mov = 0;
         }
     }
 }

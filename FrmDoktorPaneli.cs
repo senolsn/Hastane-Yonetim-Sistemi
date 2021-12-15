@@ -18,6 +18,7 @@ namespace Hastane_Yonetim_Sistemi
             InitializeComponent();
         }
         SqlBaglantisi bgl = new SqlBaglantisi();
+        MovementBar move = new MovementBar();
         private void FrmDoktorPaneli_Load(object sender, EventArgs e)
         {
  
@@ -50,6 +51,7 @@ namespace Hastane_Yonetim_Sistemi
             komutEkle.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Doktor Ekleme Başarılı !", "Doktor Kaydı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -70,6 +72,7 @@ namespace Hastane_Yonetim_Sistemi
             komutSil.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Doktor Silme Başarılı !", "Doktor Silme İşlemi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
         }
 
         private void btnGuncelle_Click(object sender, EventArgs e)
@@ -82,7 +85,34 @@ namespace Hastane_Yonetim_Sistemi
             komutGüncelle.Parameters.AddWithValue("@p5", txtSifre.Text);
             komutGüncelle.ExecuteNonQuery();
             bgl.baglanti().Close();
+
+           
+
+
+
             MessageBox.Show("Doktor Güncelleme Başarılı !", "Güncelleme Kaydı", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Hide();
+
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move.mov = 1;
+            move.movX = e.X;
+            move.movY = e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move.mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - move.movX, MousePosition.Y - move.movY);
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            move.mov = 0;
         }
     }
 }

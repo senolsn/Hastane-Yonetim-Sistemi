@@ -18,6 +18,7 @@ namespace Hastane_Yonetim_Sistemi
             InitializeComponent();
         }
         SqlBaglantisi bgl = new SqlBaglantisi();
+        MovementBar move = new MovementBar();
 
         private void btnGirisYap_Click(object sender, EventArgs e)
         {
@@ -39,8 +40,25 @@ namespace Hastane_Yonetim_Sistemi
             }
         }
 
-
-            
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            move.mov = 1;
+            move.movX = e.X;
+            move.movY = e.Y;
         }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move.mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - move.movX, MousePosition.Y - move.movY);
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            move.mov = 0;
+        }
+    }
     }
 

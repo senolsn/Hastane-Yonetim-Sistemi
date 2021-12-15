@@ -130,6 +130,7 @@
     <Compile Include="FrmSekreterGiris.Designer.cs">
       <DependentUpon>FrmSekreterGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="MovementBar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlBaglantisi.cs" />

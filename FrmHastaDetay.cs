@@ -18,8 +18,11 @@ namespace Hastane_Yonetim_Sistemi
             InitializeComponent();
         }
         
+
+        
         public string tc;
         SqlBaglantisi bgl = new SqlBaglantisi();
+        MovementBar move = new MovementBar();
         private void FrmHastaDetay_Load(object sender, EventArgs e)
         {
             //Ad Soyad ve TC Çekme
@@ -98,8 +101,45 @@ namespace Hastane_Yonetim_Sistemi
             komut.ExecuteNonQuery();
             bgl.baglanti().Close();
             MessageBox.Show("Randevunuz Başarıyla Oluşturuldu","Randevu Kaydı !", MessageBoxButtons.OK, MessageBoxIcon.Information);
+           
+            //Tabloyu yenileme
+            DataTable dt = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter("Select * From Tbl_Randevular where HastaTC=" + tc, bgl.baglanti());
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+  
+
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+            move.mov = 1;
+            move.movX = e.X;
+            move.movY = e.Y;
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (move.mov == 1)
+            {
+                this.SetDesktopLocation(MousePosition.X - move.movX, MousePosition.Y - move.movY);
+            }
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            move.mov = 0;
+        }
     }
 }
